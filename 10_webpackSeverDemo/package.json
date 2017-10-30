@@ -1,0 +1,17 @@
+{
+  "name": "WebPackServerDemo",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "3.6.0",
+    "webpack-dev-server": "2.8.2",
+    "webpack-merge": "4.1.0",
+    "webpack-notifier": "1.5.0",
+    "webpack-visualizer-plugin": "0.1.11"
+  },
+  "scripts": {
+    "start": "npm run webpack:dev",
+    "webpack:dev": "npm run webpack-dev-server -- --config webpack/webpack.dev.js --progress --inline --hot --profile --port=9060 --watch-content-base",
+    "webpack-dev-server": "node --max_old_space_size=4096 node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  }
+}
