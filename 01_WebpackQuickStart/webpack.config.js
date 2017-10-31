@@ -7,10 +7,8 @@
  */
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-
-const extractSass = new ExtractTextPlugin("[name].css")
 module.exports = {
     /**
      * 设置编译入口文件，webpack加载此文件开始分析依赖，编译输出
@@ -61,6 +59,6 @@ module.exports = {
             template: __dirname + "/app/index.html",
             title: "测试页面"
         }),
-        extractSass
+        new ExtractTextPlugin("[name].css")
     ]
 };
