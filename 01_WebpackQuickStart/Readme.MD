@@ -1,7 +1,22 @@
-文件结构说明
+#文件结构说明
 
-./webpack.config.js : webpack 执行目录获取配置的文件名，可以通过执行时加上参数 --config 指定配置文件名称   或者使用 --config-name 指定默认配置文件名称，在开发过过程使用使用此设置区分dev|release  
-./app ：设定源代码目录  
-./assets : 静态资源目录   
-./build : 编译输出目录
++/app/                  # 开发代码目录
+ |++/css/               # CSS样式目录
+ |++|++/hello.css       # hello.js 使用的css
+ |++|++/main.css        # main.js  使用的css
+ |++/img/               # 图片资源目录
+ |++|++/webpack.png     # 示例图片
+ |++/js/                # JS代码目录
+ |++|++/main.js         # main.js 代码
+ |++|++/hello.js        # hello.js 代码
+ |++/index.html         # 主页HTML
+ |/dist/                # 输出目录
+ |++/assets/            # 所有js、img、css的根目录
+ |++|++/css/            # 输出css根目录
+ |++|++|++/main.css     # main.css输出文件
+ |++|++/img/            # 输出图片的根目录
+ |++|++|++/[hash].jpg   # 输出示例图片
+ |++|++/js/             # 输出js根目录
+ |++|++|++/bundle.js    # 输出的js文件
+ |++|++/index.html      # 输出的主页文件
 
