@@ -63,8 +63,9 @@ module.exports = {
                 })
             },
             /**
-             * 此出的ouputPath使用相对于output/path的地址来设定。在资源路径合并时，会将publicPath和outputPath合并做为资源引用地址。 
-             * 在main.css 使用 图片资源的地址应该为 ../img/[hash].png  除去 ../img, 所以publicPath应该设置为./ ,表示当前目录
+             * 此出的ouputPath使用相对于output/path的地址来设定。·开发时应尽量开发文件结构和输出文件结构保持一致·
+             * 在资源路径合并时，会将publicPath和原来设定合并做为新的资源引用地址。 
+             * 在main.css 使用 图片资源的地址为 ../img/[hash].png  除去原来设定 ../img, 所以publicPath应该设置为./ ,表示当前目录
              * +/dist/
              *  |++|assets/  
              *  |++|++/css/
