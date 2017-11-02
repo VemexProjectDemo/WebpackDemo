@@ -1,0 +1,16 @@
+{
+  "name": "webpackloader",
+  "version": "1.0.0",
+  "description": "此示例将演示如何使用Loader构建Saas的应用",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": { 
+    "webpack": "^3.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
