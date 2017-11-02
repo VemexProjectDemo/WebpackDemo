@@ -1,0 +1,14 @@
+/**
+* 声明sass 变量
+*/
+$fontSize: 12px;
+$background-img:url(../img/webpack.png);
+
+
+//设定css 格式
+html {
+    font-size : $fontSize;
+    background-image:$background-img
+}
+
+    
